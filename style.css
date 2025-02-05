@@ -1,12 +1,23 @@
-/* Estilos generales */
-body {
+/* Fondo corregido */
+body, html {
     margin: 0;
     padding: 0;
+    height: 100%;
+    overflow: hidden; /* Para evitar desplazamiento */
     font-family: Arial, sans-serif;
-    background: url('https://th.bing.com/th/id/R.d3ad36f9b6788ee0eed2111735b7ac31?rik=0wjCqg7o%2fdG2ZQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2fminecraft-wallpaper-hd.jpg&ehk=Ww7Be8F5vVBBOZZyYDm0a48j3dgJxQItJZtO9CLWAEI%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
-    background-size: cover;
     color: white;
     text-align: center;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.solofondos.com/wp-content/uploads/2015/12/minecraft-wallpaper-hd.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1; /* Para que el fondo quede detrás de todo */
 }
 
 /* Logo */
@@ -22,8 +33,11 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
 }
 
+/* Título */
 h1 {
     font-size: 36px;
     margin-bottom: 10px;
@@ -31,18 +45,17 @@ h1 {
 
 p {
     font-size: 18px;
-    width: 80%;
-    margin: auto;
+    margin-bottom: 20px;
 }
 
-/* Menú */
+/* Menú centrado */
 nav ul {
     list-style: none;
     padding: 0;
-    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -53,12 +66,10 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 20px;
-    padding: 10px 20px;
+    padding: 12px 18px;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease-in-out;
-    position: relative;
-    overflow: hidden;
 }
 
 /* Animación roja al pasar el mouse */

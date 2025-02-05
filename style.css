@@ -1,75 +1,31 @@
-/* Estilos generales */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: url('https://th.bing.com/th/id/R.d3ad36f9b6788ee0eed2111735b7ac31?rik=0wjCqg7o%2fdG2ZQ&riu=http%3a%2f%2fwww.solofondos.com%2fwp-content%2fuploads%2f2015%2f12%2fminecraft-wallpaper-hd.jpg&ehk=Ww7Be8F5vVBBOZZyYDm0a48j3dgJxQItJZtO9CLWAEI%3d&risl=&pid=ImgRaw&r=0') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información General</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://cdn.discordapp.com/icons/1322707824194748478/c7c4d260152dc4f44e047f5909aba49a.png?size=128" alt="LowMc Logo">
+        </div>
+    </header>
 
-/* Estilos del encabezado */
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-}
+    <main>
+        <h1>Información General</h1>
+        <p>Página en construcción.</p>
 
-/* Logo */
-.logo img {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px;
-}
-
-/* Menú */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    gap: 20px;
-}
-
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    padding: 10px 15px;
-    border-radius: 5px;
-    transition: background 0.3s, transform 0.2s;
-}
-
-/* Efecto al pasar el mouse */
-nav ul li a:hover {
-    background: red;
-    transform: scale(1.1);
-}
-
-/* Efecto al hacer clic */
-nav ul li a:active {
-    background: darkred;
-    transform: scale(0.9);
-}
-
-/* Estilos del contenido principal */
-main {
-    margin-top: 50px;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    width: 80%;
-    margin: auto;
-}
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="informaciongeneral.html">Información General</a></li>
+                <li><a href="sancionesmc.html">Sanciones Minecraft</a></li>
+                <li><a href="sancionesdc.html">Discord Sanciones</a></li>
+                <li><a href="actualizaciones.html">Actualizaciones Staff</a></li>
+            </ul>
+        </nav>
+    </main>
+</body>
+</html>
